@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./style (1).css">
+    <title>viajalo</title>
+</head>
+<body>
+  <h1>Calculadora de viaje</h1>
+   <!--Comieno de menu resposnvo-->
+   <nav>
+    <imput type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+    </a>
+
+  <nav class="navbar navbar-expand-lg">
+     <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-light text-bg-danger">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">viajalo</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./page/carritofinalprueba.html">Carrito</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+       </header>
+    <!--final del menu responsivo-->
+  <form id="itinerario">
+  <div class="container">
+      <div class="myTodo">
+          <div class="inputvalue">
+              <input class="inputVal" type="text" placeholder="Agrega tu actividad de viaje" value="">
+              <button class="btn">Agrega tu actividad de viaje</button>
+          </div>
+        
+         
+          <div class="todoLists">
+              
+          </div>
+          <button class="clearTask" onclick="clearTask()">Borra itinerario</button>
+      </div>
+  </div>
+</form>   
+  <br>
+
+  <div class="col-md-12 text-center">
+    <section>
+      <form>
+        <h1>Calculadora de viaje</h1>
+        <div class="form-group">
+          <label for="alojamiento">Alojamiento:</label>
+          <input class="form-control" id="alojamiento" type="text" name="alojamiento"/>
+        </div>
+        <div class="form-group">
+          <label for="comida">Comida:</label>
+          <input class="form-control" id="comida" type="text" name="comida"/>
+        </div>
+        <div class="form-group">
+          <label for="tourOCircuitos">Tour o Circuitos:</label>
+          <input class="form-control" id="tourOCircuitos" type="text" name="tourOCircuitos"/>
+        </div>
+        <div class="form-group">
+          <label for="transporte">Transporte:</label>
+          <input class="form-control" id="transporte" type="text" name="transporte"/>
+        </div>
+        <div class="form-group">
+          <label for="resultado">Resultado:</label>
+          <input class="form-control" id="resultado" type="text" name="resultado" disabled/>
+        </div>
+        
+        <button type="button" class="btn btn-default" onclick="calcular()">calcular</button>
+      </form>
+</section>
+<script src="../viajalofinalentrega/main (1).js"></script>
+</body>
+</html>
